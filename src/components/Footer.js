@@ -11,7 +11,7 @@ const FooterWrapper = styled.footer`
 
 const Footer = () => (
   <FooterWrapper>
-    <p>&copy; 2024 Dynamic Pricing Partners. All rights reserved.</p>
+    <p>&copy; 2024 Strategic Push Business Consulting. All rights reserved.</p>
     <p>
       <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> | 
       <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a> | 

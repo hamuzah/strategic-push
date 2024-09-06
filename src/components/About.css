@@ -26,7 +26,11 @@
   position: relative;
   width: 300px; /* Adjust width to fit your design */
   margin-right: 20px; /* Space between the two images */
-  animation: fadeInAndOut 4s ease-in-out infinite; /* Animation for the images */
+  animation: dropAndFade 4s ease-in-out infinite; /* Drop and disappear animation */
+}
+
+.about-image:nth-child(2) {
+  animation-delay: 2s; /* Delay for the second image */
 }
 
 .about-image img {
@@ -44,27 +48,22 @@
 }
 
 /* Keyframe animations */
-@keyframes fadeIn {
+@keyframes dropAndFade {
   0% {
+    transform: translateY(-50px);
     opacity: 0;
   }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInAndOut {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  50% {
-    opacity: 1;
+  30% {
     transform: translateY(0);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(0);
+    opacity: 1;
   }
   100% {
+    transform: translateY(50px);
     opacity: 0;
-    transform: translateY(20px);
   }
 }
 
