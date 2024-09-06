@@ -1,0 +1,69 @@
+/* ServiceDetail.css */
+
+.service-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .service-detail-image-container {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+  }
+  
+  .service-detail-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-detail-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .service-detail-content {
+    max-width: 800px;
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .service-detail-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+  }
+  
+  .service-detail-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #7f8c8d;
+  }
+  
+  .service-detail-additional-info {
+    font-size: 1rem;
+    color: #34495e;
+    line-height: 1.6;
+    margin-top: 1.5rem;
+  }
+  
+  .service-detail-content:hover {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-not-found {
+    font-size: 1.5rem;
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 5rem;
+  }
+  

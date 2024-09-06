@@ -1,0 +1,112 @@
+.header {
+  background-color: #002147;
+  color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  animation: popAnimation 2s ease-in-out infinite; /* Applying the popping animation */
+}
+
+.circular-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@keyframes popAnimation {
+  0% {
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    transform: scale(1.2); /* Pop - slightly larger */
+  }
+  100% {
+    transform: scale(1); /* Back to normal size */
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav a, .dropdown {
+  color: #ffffff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 15px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 1;
+  padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 16px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+.auth-buttons a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.login-btn {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+.signup-btn {
+  background-color: #0079d3;
+}
+
+.signup-btn:hover {
+  background-color: #005f9e;
+}

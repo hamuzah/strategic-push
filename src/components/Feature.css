@@ -1,0 +1,322 @@
+
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden; /* Ensure the cards don't overflow the container */
+  position: relative;
+}
+
+.feature-card {
+  background-color: #2F3C7E;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 250px;
+  text-align: center;
+  color: #c0d623;
+  transform: translateX(100vw); /* Starts from the right */
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  animation: moveRightToLeft 10s linear infinite;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  background-color: #ffd102; /* Change background color as needed */
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+  animation: flip 2s infinite;
+  backface-visibility: hidden; /* Ensures the back of the card is not visible */
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: fadeIn 2s ease-out;
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: white;
+  animation: fadeIn 2s ease-out 0.5s;
+}
+
+.cartoon-container {
+  position: absolute;
+  top: 50%;
+  left: -150px; /* Adjust based on cartoon width */
+  width: 150px;
+  height: auto;
+  animation: moveCartoon 10s linear infinite;
+}
+
+.cartoon {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100vw); /* Start from the right of the viewport */
+  }
+  100% {
+    transform: translateX(-100vw); /* End at the left of the viewport */
+  }
+}
+
+@keyframes moveCartoon {
+  0% {
+    transform: translateX(-150px); /* Starts outside the left edge */
+  }
+  100% {
+    transform: translateX(100vw); /* Moves to the right edge of the viewport */
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+/* General container styling */
+.features {
+  background-image: url('../assets/h11.avif');
+  background-size: cover; /* Stretch to cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent repeating the background image */
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* Ensure stars don't overflow the container */
+  animation: moveBackground 60s linear infinite; /* Slow motion background animation */
+}
+
+/* Feature card styling */
+.feature-card {
+  background-color: #2F3C7E;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 250px;
+  text-align: center;
+  color: #c0d623;
+  transform: translateX(100vw); /* Starts from the right */
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  animation: moveRightToLeft 10s linear infinite;
+  z-index: 2; /* Higher z-index to place it above the text */
+}
+
+/* Ensure the container handles overflow */
+.features-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Cartoon container styling */
+.cartoon-container {
+  position: absolute;
+  top: 50%;
+  left: -150px; /* Adjust based on cartoon width */
+  width: 150px;
+  height: auto;
+  animation: moveCartoon 10s linear infinite;
+  z-index: 1; /* Higher z-index than text but lower than cards */
+}
+
+.cartoon {
+  width: 100%;
+  height: auto;
+}
+
+/* Keyframes for cartoon movement */
+@keyframes moveCartoon {
+  0% {
+    transform: translateX(-150px); /* Starts outside the left edge */
+  }
+  100% {
+    transform: translateX(100vw); /* Moves to the right edge of the viewport */
+  }
+}
+
+/* Strategic Push text animation */
+.strategic-push {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  font-weight: bold;
+  color: gold;
+  z-index: 0; /* Lower z-index to place it behind the cards */
+  display: flex;
+  justify-content: center;
+  gap: 5px; /* Space between letters */
+  animation: showAndHide 10s infinite; /* Loop the appearance and disappearance */
+}
+
+.letter {
+  display: inline-block;
+  position: relative; /* So stars can appear around each letter */
+  animation: dropAndDisappear 10s infinite; /* Adjust timing to match parent animation */
+}
+
+.star {
+  position: absolute;
+  color: gold;
+  font-size: 1rem;
+  opacity: 0;
+  animation: starDrop 4s ease-in-out infinite; /* Continuous star falling */
+}
+
+/* Keyframes for text appearance and disappearance */
+@keyframes showAndHide {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Keyframes for letter dropping and disappearing */
+@keyframes dropAndDisappear {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+/* Keyframes for star falling from random positions */
+@keyframes starDrop {
+  0% {
+    opacity: 1;
+    transform: translateY(-10%) scale(0.5);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(110%) scale(1);
+  }
+}
+
+/* Generate stars */
+.features::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure it stays behind all content */
+  overflow: hidden;
+}
+
+/* Create multiple stars */
+@keyframes starFall {
+  0% {
+    top: -10%;
+    left: 0%;
+  }
+  100% {
+    top: 100%;
+    left: 100%;
+  }
+}
+
+.star-generator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.star-generator .star {
+  position: absolute;
+  font-size: 1rem;
+  color: gold;
+  opacity: 0;
+  animation: starFall 5s linear infinite;
+}
+
+/* Create multiple stars */
+.star-generator .star:nth-child(1) { left: 10%; animation-delay: 0s; }
+.star-generator .star:nth-child(2) { left: 30%; animation-delay: 1s; }
+.star-generator .star:nth-child(3) { left: 50%; animation-delay: 2s; }
+.star-generator .star:nth-child(4) { left: 70%; animation-delay: 3s; }
+.star-generator .star:nth-child(5) { left: 90%; animation-delay: 4s; }
+
+/* Background animation */
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}

@@ -1,0 +1,128 @@
+/* Container Styling */
+.contact-page {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, darkblue, white); /* Purple gradient */
+    overflow: hidden;
+  }
+  
+  .contact-content {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 600px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    animation: slideDown 1.5s ease-out;
+  }
+  
+  .contact-description {
+    font-size: 1.2rem;
+    color: #eee;
+    margin-bottom: 40px;
+    animation: slideDown 2s ease-out;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-input, .contact-textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+    background-color: white; /* Translucent input background */
+    color: #fff;
+  }
+  
+  .contact-input:focus, .contact-textarea:focus {
+    transform: scale(1.05);
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.6); /* Highlight on focus */
+  }
+  
+  .contact-textarea {
+    min-height: 150px;
+  }
+  
+  .contact-button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    background: darkgoldenrod; /* Rich purple */
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background: #8e44ad;
+    transform: scale(1.05);
+  }
+  
+  /* Background Animation */
+  .contact-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, #9b59b6, #6a0572, #8e44ad);
+    z-index: 1;
+    animation: backgroundMove 6s ease-in-out infinite;
+    opacity: 0.6;
+  }
+  
+  @keyframes backgroundMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Fade-in and Slide Down Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

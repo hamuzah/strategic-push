@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+/* General layout adjustments */
+.main-content {
+  padding-bottom: 100px; /* Adjust the padding to ensure space for the footer */
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1; /* Ensure the footer has a background color */
+}
+

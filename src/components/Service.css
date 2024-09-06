@@ -1,0 +1,52 @@
+/* src/Service.css */
+.service-detail-container {
+  padding: 20px;
+  margin-bottom: 100px; 
+}
+
+.service-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.service-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.service-content {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.service-content h3 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.service-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.service-content li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .service-title {
+    font-size: 20px;
+  }
+
+  .service-description,
+  .service-content {
+    font-size: 14px;
+  }
+}
