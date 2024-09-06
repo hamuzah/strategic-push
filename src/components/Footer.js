@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FaFacebookF, FaTwitter, FaLinkedin, FaPhoneAlt } from 'react-icons/fa'; // Import social media icons
+import WhatsAppButton from './WhatsappButton';
 
 const FooterWrapper = styled.footer`
   background-color: #1a1a1a;
@@ -75,6 +76,7 @@ const Footer = () => (
     <p>&copy; 2024 Strategic Push Business Consulting. All rights reserved.</p>
     <p>Address: 123 Consulting Lane, Kampala, Uganda</p>
     <p>Business Hours: Mon - Fri: 9:00 AM - 5:00 PM</p>
+    <WhatsAppButton phoneNumber="+256 773 952 003" />
   </FooterWrapper>
 );
 
