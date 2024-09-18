@@ -1,52 +1,76 @@
-/* src/Service.css */
-.service-detail-container {
-  padding: 20px;
-  margin-bottom: 100px; 
-}
+/* src/Service.css */  
+.service-detail-container {  
+  padding: 20px;  
+  margin-bottom: 100px;   
+  transition: background-color 0.3s ease; /* Smooth background transition */  
+  background-color: #f9f9f9; /* Light background for the container */  
+  border-radius: 10px; /* Softer corners */  
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adds depth with subtle shadow */  
+}  
 
-.service-title {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
+.service-title {  
+  font-size: 24px;  
+  margin-bottom: 20px;  
+  color: #333; /* Darker color for better visibility */  
+  transition: color 0.3s ease; /* Smooth color transition */  
+}  
 
-.service-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
+.service-title:hover {  
+  color: #0056b3; /* Change color on hover for emphasis */  
+}  
 
-.service-description {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
+.service-image {  
+  width: 100%;  
+  height: auto;  
+  border-radius: 8px;  
+  margin-bottom: 20px;  
+  transition: transform 0.3s ease; /* Animation for scaling */  
+}  
 
-.service-content {
-  font-size: 14px;
-  line-height: 1.6;
-}
+.service-image:hover {  
+  transform: scale(1.05); /* Slight zoom effect on hover */  
+}  
 
-.service-content h3 {
-  margin-top: 20px;
-  font-size: 18px;
-}
+.service-description {  
+  font-size: 16px;  
+  margin-bottom: 20px;  
+  color: #555; /* Slightly lighter text color */  
+}  
 
-.service-content ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
+.service-content {  
+  font-size: 14px;  
+  line-height: 1.6;  
+  color: #444; /* Consistent text color */  
+  transition: color 0.3s ease; /* Smooth color transition */  
+}  
 
-.service-content li {
-  margin-bottom: 10px;
-}
+.service-content h3 {  
+  margin-top: 20px;  
+  font-size: 18px;  
+  color: #222; /* Darker headings for emphasis */  
+}  
 
-@media (max-width: 768px) {
-  .service-title {
-    font-size: 20px;
-  }
+.service-content ul {  
+  list-style-type: disc;  
+  padding-left: 20px;  
+}  
 
-  .service-description,
-  .service-content {
-    font-size: 14px;
-  }
+.service-content li {  
+  margin-bottom: 10px;  
+  transition: transform 0.3s ease; /* Animation for list items */  
+}  
+
+.service-content li:hover {  
+  transform: translateX(5px); /* Slight slide effect on hover */  
+}  
+
+@media (max-width: 768px) {  
+  .service-title {  
+    font-size: 20px;  
+  }  
+
+  .service-description,  
+  .service-content {  
+    font-size: 14px;  
+  }  
 }

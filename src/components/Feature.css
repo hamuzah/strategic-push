@@ -112,7 +112,8 @@
 
 /* General container styling */
 .features {
-  background-image: url('../assets/h11.avif');
+  /* background-image: url('../assets/h11.avif'); */
+  background-color: darkolivegreen;
   background-size: cover; /* Stretch to cover the entire container */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent repeating the background image */

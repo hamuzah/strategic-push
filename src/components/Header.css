@@ -1,112 +1,115 @@
-.header {
-  background-color: #002147;
-  color: #ffffff;
-  padding: 10px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+.header {  
+  background-color: #002147; /* Header background color */  
+  color: #ffffff; /* Text color */  
+  padding: 10px 20px; /* Header padding */  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Header shadow */  
+}  
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+.header-container {  
+  display: flex;  
+  justify-content: space-between; /* Space between elements */  
+  align-items: center; /* Center items vertically */  
+  max-width: 1200px; /* Max width for the header */  
+  margin: 0 auto; /* Center the header */  
+}  
 
-.logo {
-  display: flex;
-  align-items: center;
-  animation: popAnimation 2s ease-in-out infinite; /* Applying the popping animation */
-}
+.logo {  
+  display: flex;  
+  align-items: center; /* Center logo vertically */  
+  animation: popAnimation 2s ease-in-out infinite; /* Popping animation */  
+}  
 
-.circular-image {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  object-fit: cover;
-}
+.circular-image {  
+  width: 50px; /* Circular image width */  
+  height: 50px; /* Circular image height */  
+  border-radius: 50%; /* Circle shape */  
+  object-fit: cover; /* Maintain aspect ratio */  
+}  
 
-@keyframes popAnimation {
-  0% {
-    transform: scale(1); /* Normal size */
-  }
-  50% {
-    transform: scale(1.2); /* Pop - slightly larger */
-  }
-  100% {
-    transform: scale(1); /* Back to normal size */
-  }
-}
+@keyframes popAnimation {  
+  0% {  
+    transform: scale(1); /* Normal size */  
+  }  
+  50% {  
+    transform: scale(1.2); /* Pop - slightly larger */  
+  }  
+  100% {  
+    transform: scale(1); /* Back to normal size */  
+  }  
+}  
 
-.nav {
-  display: flex;
-  align-items: center;
-}
+.nav {  
+  display: flex; /* Horizontal navigation */  
+  align-items: center; /* Align items vertically */  
+}  
 
-.nav a, .dropdown {
-  color: #ffffff;
-  margin: 0 15px;
-  text-decoration: none;
-  font-size: 16px;
-  position: relative;
-}
+.nav a, .dropdown {  
+  color: #ffffff; /* Link color */  
+  margin: 0 15px; /* Margin between links */  
+  text-decoration: none; /* No underline */  
+  font-size: 16px; /* Font size for links */  
+  position: relative; /* Required for dropdown positioning */  
+  cursor: pointer; /* Pointer cursor for links */  
+}  
 
-.dropdown-btn {
-  background: none;
-  border: none;
-  color: #ffffff;
-  font-size: 16px;
-  cursor: pointer;
-  padding: 8px 15px;
-  display: inline-block;
-}
+.dropdown-btn {  
+  background: none; /* No background */  
+  border: none; /* No border */  
+  color: #ffffff; /* Button text color */  
+  font-size: 16px; /* Button font size */  
+  cursor: pointer; /* Pointer cursor for button */  
+  padding: 8px 15px; /* Padding for button */  
+  display: inline-block; /* Inline block for layout */  
+}  
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #ffffff;
-  color: #000000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  z-index: 1;
-  padding: 10px 0;
-}
+.dropdown-content {  
+  display: none; /* Hidden by default */  
+  position: absolute; /* Dropdown positioning */  
+  top: 100%; /* Position below dropdown button */  
+  left: 0; /* Align to left */  
+  background-color: #ffffff; /* Dropdown background */  
+  color: #000000; /* Dropdown text color */  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */  
+  border-radius: 4px; /* Rounded corners */  
+  z-index: 1; /* Above other elements */  
+  padding: 10px 0; /* Padding for dropdown items */  
+}  
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+.dropdown:hover .dropdown-content {  
+  display: block; /* Show dropdown on hover */  
+}  
 
-.dropdown-content a {
-  display: block;
-  padding: 8px 16px;
-  color: #000000;
-  text-decoration: none;
-}
+.dropdown-content a {  
+  display: block; /* Full width for dropdown items */  
+  padding: 8px 16px; /* Padding for dropdown links */  
+  color: #000000; /* Text color for dropdown links */  
+  text-decoration: none; /* No underline */  
+  cursor: pointer; /* Pointer cursor for dropdown links */  
+}  
 
-.dropdown-content a:hover {
-  background-color: #f0f0f0;
-}
+.dropdown-content a:hover {  
+  background-color: #f0f0f0; /* Background color on hover */  
+}  
 
-.auth-buttons a {
-  color: #ffffff;
-  margin: 0 10px;
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-size: 14px;
-}
+.auth-buttons a {  
+  color: #ffffff; /* Auth button text color */  
+  margin: 0 10px; /* Margin between buttons */  
+  text-decoration: none; /* No underline */  
+  padding: 8px 16px; /* Padding for buttons */  
+  border-radius: 4px; /* Rounded corners for buttons */  
+  font-size: 14px; /* Font size for buttons */  
+  cursor: pointer; /* Pointer cursor for auth buttons */  
+}  
 
-.login-btn {
-  background-color: transparent;
-  border: 1px solid #ffffff;
-}
+.login-btn {  
+  background-color: transparent; /* Transparent background for login */  
+  border: 1px solid #ffffff; /* White border */  
+}  
 
-.signup-btn {
-  background-color: #0079d3;
-}
+.signup-btn {  
+  background-color: #0079d3; /* Signup button color */  
+}  
 
-.signup-btn:hover {
-  background-color: #005f9e;
+.signup-btn:hover {  
+  background-color: #005f9e; /* Darker color on hover */  
 }

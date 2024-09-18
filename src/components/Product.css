@@ -5,7 +5,7 @@
   margin-bottom: 100px;
   position: relative;
   overflow: hidden; /* Ensure content doesn't overflow */
-  background: url('../assets/877.avif') no-repeat center center fixed;
+  background: url('../assets/ggg.avif') no-repeat center center fixed;
   background-size: 200% 200%; /* Increase the background size for noticeable movement */
   animation: backgroundMove 60s linear infinite; /* Apply animation */
 }
